@@ -56,7 +56,7 @@ const Map = props => {
 
 const MapWrapped = withScriptjs(withGoogleMap(Map))
 
-const GoogleMapSignup = props => (
+const GoogleMapComponent = props => (
   <MapContainer height={props.locations.length > 0 ? '100%' : ''}>
     <MapWrapped
       googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyDAO1iIgGr9rxiRYGJpfzORd0DHibssXzo`}
@@ -80,4 +80,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(GoogleMapSignup)
+export default connect(mapStateToProps)(GoogleMapComponent)

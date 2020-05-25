@@ -3,7 +3,7 @@ import axios from 'axios'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import GoogleMapSignup from '../GoogleMap'
+import GoogleMapComponent from '../GoogleMap'
 import { addMarket } from '../../store/actions/markets'
 import { InputContainer, Input, ReisterButton, Screen } from './signup.style'
 
@@ -76,7 +76,7 @@ class Signup extends Component {
           />
         </InputContainer>
         {userLocation && (
-          <GoogleMapSignup
+          <GoogleMapComponent
             userLocation={userLocation ? this.state.userLocation : ''}
             margin_top="10px"
           />

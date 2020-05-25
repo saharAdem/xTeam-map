@@ -1,7 +1,7 @@
 import React from 'react'
 
-import GoogleMapSignup from '../GoogleMap'
+import GoogleMapComponent from '../GoogleMap'
 
-const MarketsMap = () => <GoogleMapSignup />
+const MarketsMap = () => <GoogleMapComponent />
 
 export default MarketsMap
